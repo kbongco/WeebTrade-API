@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_01_02_153819) do
+ActiveRecord::Schema.define(version: 2024_01_02_183401) do
 
   create_table "animes", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(version: 2024_01_02_153819) do
     t.string "img_link"
     t.string "img_detail"
     t.string "summary"
+  end
+
+  create_table "figure_types", force: :cascade do |t|
+    t.string "figure_type"
+    t.string "figure_img"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
