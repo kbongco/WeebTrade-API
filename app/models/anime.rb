@@ -3,7 +3,6 @@ class Anime < ApplicationRecord
     create_table :Anime do |t| 
       t.string :title 
       t.string :genre 
-      t.string :description
       t.string :year 
       t.string :img_link
       t.string :img_detail
