@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :figures
   namespace :api do 
     namespace :v1 do 
       resources :animes, only: [:index, :show]
