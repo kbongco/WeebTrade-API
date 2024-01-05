@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_01_02_183401) do
+ActiveRecord::Schema.define(version: 2024_01_03_165228) do
 
   create_table "animes", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -30,4 +30,26 @@ ActiveRecord::Schema.define(version: 2024_01_02_183401) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "figures", force: :cascade do |t|
+    t.integer "figure_type_id"
+    t.integer "anime_id"
+    t.string "figure_name"
+    t.string "figure_second_name"
+    t.string "rarity"
+    t.string "price"
+    t.string "rating"
+    t.string "img_link"
+    t.string "character"
+    t.string "size"
+    t.string "material"
+    t.string "manufacturer"
+    t.boolean "safe_for_work"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["anime_id"], name: "index_figures_on_anime_id"
+    t.index ["figure_type_id"], name: "index_figures_on_figure_type_id"
+  end
+
+  add_foreign_key "figures", "animes"
+  add_foreign_key "figures", "figure_types"
 end
