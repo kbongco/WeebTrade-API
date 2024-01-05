@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2024_01_03_165228) do
   end
 
   create_table "figures", force: :cascade do |t|
-    t.integer "figuretype_id"
+    t.integer "figure_type_id"
     t.integer "anime_id"
     t.string "figure_name"
     t.string "figure_second_name"
@@ -47,9 +47,9 @@ ActiveRecord::Schema.define(version: 2024_01_03_165228) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["anime_id"], name: "index_figures_on_anime_id"
-    t.index ["figuretype_id"], name: "index_figures_on_figuretype_id"
+    t.index ["figure_type_id"], name: "index_figures_on_figure_type_id"
   end
 
   add_foreign_key "figures", "animes"
-  add_foreign_key "figures", "figuretypes"
+  add_foreign_key "figures", "figure_types"
 end

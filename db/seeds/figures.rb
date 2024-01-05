@@ -1,6 +1,6 @@
 figures_data = Figure.create!([
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    figure_type: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
     anime: Anime.find_or_create_by(title: 'Spy x Family'),
     figure_name: 'Anya & Bond Forger Breaktime',
     figure_second_name: '',
@@ -15,7 +15,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    figure_type: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
     anime: Anime.find_or_create_by(title: 'Spy x Family'),
     figure_name: 'Loid Forger Party ver',
     figure_second_name: '',
@@ -30,7 +30,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   }, 
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    figure_type: FigureType.find_or_create_by(figure_type:'Scale Figure'),
     anime: Anime.find_or_create_by(title: 'Spy x Family'),
     figure_name: 'Yor Forger Family Ver',
     figure_second_name: '',
@@ -45,7 +45,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    figure_type: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
     anime: Anime.find_or_create_by(title: 'Jujutsu Kaisen'),
     figure_name: 'Kento Nanami Prize Figure',
     figure_second_name:'',
@@ -60,7 +60,7 @@ figures_data = Figure.create!([
     safe_for_work: true 
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    figure_type: FigureType.find_or_create_by(figure_type:'Scale Figure'),
     anime: Anime.find_or_create_by(title:'Jujutsu Kaisen'),
     figure_name: 'Ryomen Sukuna King of Curses',
     figure_second_name: '',
@@ -75,7 +75,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    figure_type: FigureType.find_or_create_by(figure_type:'Scale Figure'),
     anime: Anime.find_or_create_by(title: 'Jujutsu Kaisen'),
     figure_name: 'Satoru Gojo 1/7 Scale Figure',
     figure_second_name: '',
@@ -90,7 +90,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    figure_type: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
     anime: Anime.find_or_create_by(title: 'Demon Slayer'),
     figure_name: 'Nezuko Kamado Xross Link',
     figure_second_name: 'Prize Figure',
@@ -105,7 +105,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    figure_type: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
     anime: Anime.find_or_create_by(title: 'Demon Slayer'),
     figure_name: 'Tanjiro Kamado Corps Uniform Ver',
     figure_second_name: 'Demon Slayer Prize Figure',
@@ -120,7 +120,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    figure_type: FigureType.find_or_create_by(figure_type:'Scale Figure'),
     anime: Anime.find_or_create_by(title: 'Demon Slayer'),
     figure_name: 'Kyojuro Rengoku Flame Breathing',
     figure_second_name: 'Esoteric Art Ninth Form Ver Demon Slayer Figure',
@@ -135,7 +135,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   }, 
   {
-    figuretype: FigureType.find_or_create_by(figure_type: 'PVC/Prize'),
+    figure_type: FigureType.find_or_create_by(figure_type: 'PVC/Prize'),
     anime: Anime.find_or_create_by(title: 'Darling in the Franxx'),
     figure_second_name: '',
     character: 'Zero Two',
@@ -149,7 +149,7 @@ figures_data = Figure.create!([
     safe_for_work: false 
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type: 'PVC/Prize'),
+    figure_type: FigureType.find_or_create_by(figure_type: 'PVC/Prize'),
     anime: Anime.find_or_create_by(title: 'Re:Zero'),
     figure_name: 'Rem Figure (Birthday Purple Lingerie Ver)',
     figure_second_name: '',
@@ -164,7 +164,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    figure_type: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
     anime: Anime.find_or_create_by(title:'My Hero Academia'),
     figure_name: 'Himiko Toga Plush Villiam Ver',
     figure_second_name: '',
@@ -179,7 +179,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   }, 
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    figure_type: FigureType.find_or_create_by(figure_type:'Scale Figure'),
     anime: Anime.find_or_create_by(title: 'Darling in the Franxx'),
     figure_name: 'Zero Two for my darling ver',
     figure_second_name: 'DARLING in the FRANXX Figure',
@@ -192,7 +192,7 @@ figures_data = Figure.create!([
     safe_for_work: true
   },
   {
-    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    figure_type: FigureType.find_or_create_by(figure_type:'Scale Figure'),
     anime: Anime.find_or_create_by(title:'Demon Slayer'),
     figure_name: 'Nezuko Kamado Demon Form',
     figure_second_name: 'Advancing Ver Demon Slayer Kimetsu no Yaiba Figure',
