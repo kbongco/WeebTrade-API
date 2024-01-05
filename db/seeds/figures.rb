@@ -1,7 +1,7 @@
-figures_data = [
+figures_data = Figure.create!([
   {
-    figureType:FigureType.find_by(figure_type:'PVC/Prize'),
-    anime: Anime.find_by(title: 'Spy x Family'),
+    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    anime: Anime.find_or_create_by(title: 'Spy x Family'),
     figure_name: 'Anya & Bond Forger Breaktime',
     figure_second_name: '',
     rarity: '',
@@ -15,8 +15,8 @@ figures_data = [
     safe_for_work: true
   },
   {
-    figureType: FigureType.find_by(figure_type:'PVC/Prize'),
-    anime: Anime.find_by(title: 'Spy x Family'),
+    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    anime: Anime.find_or_create_by(title: 'Spy x Family'),
     figure_name: 'Loid Forger Party ver',
     figure_second_name: '',
     rarity: '',
@@ -30,8 +30,8 @@ figures_data = [
     safe_for_work: true
   }, 
   {
-    figureType: FigureType.find_by(figure_type:'Scale Figure'),
-    anime: Anime.find_by(title: 'Spy x Family'),
+    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    anime: Anime.find_or_create_by(title: 'Spy x Family'),
     figure_name: 'Yor Forger Family Ver',
     figure_second_name: '',
     rarity: '',
@@ -45,8 +45,8 @@ figures_data = [
     safe_for_work: true
   },
   {
-    figureType: FigureType.find_by(figure_type:'PVC/Prize'),
-    anime: Anime.find_by(title: 'Jujutsu Kaisen'),
+    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    anime: Anime.find_or_create_by(title: 'Jujutsu Kaisen'),
     figure_name: 'Kento Nanami Prize Figure',
     figure_second_name:'',
     rarity: '',
@@ -60,8 +60,8 @@ figures_data = [
     safe_for_work: true 
   },
   {
-    figureType: FigureType.find_by(figure_type:'Scale Figure'),
-    anime: Anime.find_by(title:'Jujutus Kaisen'),
+    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    anime: Anime.find_or_create_by(title:'Jujutsu Kaisen'),
     figure_name: 'Ryomen Sukuna King of Curses',
     figure_second_name: '',
     rarity: '',
@@ -75,8 +75,8 @@ figures_data = [
     safe_for_work: true
   },
   {
-    figureType: FigureType.find_by(figure_type:'Scale Figure'),
-    anime: Anime.find_by(title: 'Jujutsu Kaisen'),
+    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    anime: Anime.find_or_create_by(title: 'Jujutsu Kaisen'),
     figure_name: 'Satoru Gojo 1/7 Scale Figure',
     figure_second_name: '',
     character: 'Satoru Gojo',
@@ -84,15 +84,14 @@ figures_data = [
     price: '$$$',
     rating: '*****',
     img_link: 'https://i.ibb.co/wNc8K3p/Screen-Shot-2023-11-26-at-2-44-04-PM.png',
-    character: 'Satoru Gojo',
     size: '',
     material: '',
     manufacturer: '',
     safe_for_work: true
   },
   {
-    figureType: FigureType.find_by(figure_type:'PVC/Prize'),
-    anime: Anime.find_by(title: 'Demon Slayer'),
+    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    anime: Anime.find_or_create_by(title: 'Demon Slayer'),
     figure_name: 'Nezuko Kamado Xross Link',
     figure_second_name: 'Prize Figure',
     character: 'Nezuko Kamado',
@@ -100,15 +99,14 @@ figures_data = [
     price: '$',
     rating: '***',
     img_link: 'https://i.ibb.co/X29DbSd/Screen-Shot-2023-11-30-at-1-40-27-PM.png',
-    character: 'Nezuko Kamado',
     size: '7.9in',
     material: 'PVC',
     manufacturer: 'Sega',
     safe_for_work: true
   },
   {
-    figureType: FigureType.findby(figure_type:'PVC/Prize'),
-    anime: Anime.find_by(title: 'Demon Slayer'),
+    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    anime: Anime.find_or_create_by(title: 'Demon Slayer'),
     figure_name: 'Tanjiro Kamado Corps Uniform Ver',
     figure_second_name: 'Demon Slayer Prize Figure',
     character: 'Tanjiro Kamado',
@@ -122,8 +120,8 @@ figures_data = [
     safe_for_work: true
   },
   {
-    figureType: FigureType.findby(figure_type:'Scale Figure'),
-    anime: Anime.find_by(title: 'Demon Slayer'),
+    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    anime: Anime.find_or_create_by(title: 'Demon Slayer'),
     figure_name: 'Kyojuro Rengoku Flame Breathing',
     figure_second_name: 'Esoteric Art Ninth Form Ver Demon Slayer Figure',
     character:'Kyojuro Rengoku',
@@ -137,8 +135,8 @@ figures_data = [
     safe_for_work: true
   }, 
   {
-    figureType: FigureType.findby(figure_type: 'PVC/Prize'),
-    anime: Anime.find_by(title: 'Darling in the Franxx'),
+    figuretype: FigureType.find_or_create_by(figure_type: 'PVC/Prize'),
+    anime: Anime.find_or_create_by(title: 'Darling in the Franxx'),
     figure_second_name: '',
     character: 'Zero Two',
     rarity: '',
@@ -151,8 +149,8 @@ figures_data = [
     safe_for_work: false 
   },
   {
-    figureType: FigureType.find_by(figure_type: 'PVC/Prize'),
-    anime: Anime.find_by(title: 'Re:Zero'),
+    figuretype: FigureType.find_or_create_by(figure_type: 'PVC/Prize'),
+    anime: Anime.find_or_create_by(title: 'Re:Zero'),
     figure_name: 'Rem Figure (Birthday Purple Lingerie Ver)',
     figure_second_name: '',
     character: 'Rem',
@@ -166,8 +164,8 @@ figures_data = [
     safe_for_work: true
   },
   {
-    figureType: FigureType.find_by(figure_type:'PVC/Prize'),
-    anime: Anime.find_by(title:'My Hero Academia'),
+    figuretype: FigureType.find_or_create_by(figure_type:'PVC/Prize'),
+    anime: Anime.find_or_create_by(title:'My Hero Academia'),
     figure_name: 'Himiko Toga Plush Villiam Ver',
     figure_second_name: '',
     character: 'Himiko Toga',
@@ -181,8 +179,8 @@ figures_data = [
     safe_for_work: true
   }, 
   {
-    figureType: FigureType.find_by(figure_type:'Scale Figure'),
-    anime: Anime.find_by(title: 'Darling in the Franxx'),
+    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    anime: Anime.find_or_create_by(title: 'Darling in the Franxx'),
     figure_name: 'Zero Two for my darling ver',
     figure_second_name: 'DARLING in the FRANXX Figure',
     character:'Zero Two',
@@ -194,9 +192,18 @@ figures_data = [
     safe_for_work: true
   },
   {
-    figureType: FigureType.find_by(figure_type:'Scale Figure'),
-    anime: Anime.find_by(title:'Demon Slayer'),
+    figuretype: FigureType.find_or_create_by(figure_type:'Scale Figure'),
+    anime: Anime.find_or_create_by(title:'Demon Slayer'),
     figure_name: 'Nezuko Kamado Demon Form',
-    figure_second_name: ''
+    figure_second_name: 'Advancing Ver Demon Slayer Kimetsu no Yaiba Figure',
+    character: 'Nezuko Kamado',
+    rarity: '',
+    price: '$$',
+    size: '4.8in',
+    material: 'PVC, ABS',
+    manufacturer: 'Aniplex',
+    safe_for_work: true
   }
-]
+])
+
+puts 'we have our figures'
